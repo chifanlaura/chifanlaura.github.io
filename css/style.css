@@ -1,0 +1,18 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+.is-active {
+    background-color: #c7a500 !important;
+    border-radius: 25px;
+}
+
+a.navbar-item:hover {
+    background-color: #c7a500 !important;
+    border-radius: 25px;
+}
+
+.landing-image {
+    /* background: url("../aradWatercolor.png") center; */
+    position:fixed;
+    right: 0px;
+    bottom: 0px;
+}
