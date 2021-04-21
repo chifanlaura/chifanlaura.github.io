@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overlays Within Street View</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./css/mapStyle.css" />
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="./scripts/index.js"></script>
+</head>
+
+<body>
+    <header class="navbar has-shadow is-dark py-5">
+        <div class="container">
+            <div class="navbar-brand">
+                <span>
+                    <p class='title has-text-white'>Arad</p>
+                </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item px-4 mx-4 is-warning is-rounded">
+                        Acasa
+                    </a>
+                    <a href="tour.html" class="navbar-item is-active px-4 mx-4">
+                        Turul Informativ
+                    </a>
+                    <a class="navbar-item px-4 mx-4">
+                        Istoria Generala
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="floating-panel">
+        <input type="button" value="Toggle Street View" onclick="toggleStreetView();" />
+    </div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZWC4NTdf7i6oZAprMNoR4y3e1QlN6PNY&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>

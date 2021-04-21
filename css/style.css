@@ -2,7 +2,7 @@
 
 .is-active {
     background-color: #c7a500 !important;
-    border-radius: 25px;
+    border-radius: 25px !important;
 }
 
 a.navbar-item:hover {
