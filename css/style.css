@@ -1,8 +1,13 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins' !important;
+}
 
 .is-active {
     background-color: #c7a500 !important;
-    border-radius: 25px;
+    border-radius: 25px !important;
 }
 
 a.navbar-item:hover {
@@ -12,8 +17,44 @@ a.navbar-item:hover {
 
 .landing-image {
     /* background: url("../aradWatercolor.png") center; */
-    position:fixed;
+    position: fixed;
     right: 0px;
     bottom: 0px;
     height: 90vh;
+}
+
+.my-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.my-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -2;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.my-dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.my-dropdown-content a:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+.my-dropdown:hover {
+    background-color: #c7a500 !important;
+    border-radius: 25px;
+}
+
+.my-dropdown:hover .my-dropdown-content {
+    display: block;
 }
