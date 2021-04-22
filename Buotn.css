@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background: #111;
-}
-a
+
+a.read-more
 {
   position: relative;
   width: 180px;
@@ -27,8 +12,9 @@ a
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-radius: 5px;
 }
-a:before
+a.read-more:before
 {
   content: '';
   position: absolute;
@@ -40,7 +26,7 @@ a:before
   transition: 0.5s ease-in-out;
   transition-delay: 0.5s;
 }
-a:after
+a.read-more:after
 {
   content: '';
   position: absolute;
@@ -53,34 +39,34 @@ a:after
   transition-delay: 0.5s;
 
 }
-a:nth-child(2):before,
-a:nth-child(2):after
+a.read-more:nth-child(2):before,
+a.read-more:nth-child(2):after
 {
   background: #fe1a6f;
 }
-a:hover:before,
-a:hover:after
+a.read-more:hover:before,
+a.read-more:hover:after
 {
   transition-delay: 0s;
   width: 50%;
 }
-a span
+a.read-more span
 {
   position: absolute;
   color: #fff;
   font-size: 18px;
   transition: 0.5s;
 }
-a span:nth-child(1)
+a.read-more span:nth-child(1)
 {
   transition-delay: 0.75s;
 }
-a:hover span:nth-child(1)
+a.read-more:hover span:nth-child(1)
 {
   transform: scale(0);
   transition-delay: 0s;
 }
-a span:nth-child(2)
+a.read-more span:nth-child(2)
 {
   transform: scale(3);
   transition-delay: 0s;
@@ -88,7 +74,7 @@ a span:nth-child(2)
   z-index: 1;
   color: #111;
 }
-a:hover span:nth-child(2)
+a.read-more:hover span:nth-child(2)
 {
   transform: scale(1);
   transition-delay: 0.5s;
