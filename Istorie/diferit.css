@@ -1,14 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*
+/* *
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* font-family: 'Poppins', sans-serif; */
-}
-body
+	/* font-family: 'Poppins', sans-serif; *
+} */
+/* body
 {
 	display: flex;
 	justify-content: center;
@@ -16,7 +16,14 @@ body
 	flex-wrap: wrap;
 	min-height: 100vh;
 	background: #222;
-}
+} */
+
+/* #main {
+	min-width: 100vw !important;
+	height: 100vh !important;
+	background-color: #222;
+} */
+
 .card
 {
 	position: relative;
@@ -99,7 +106,7 @@ body
 
 .back-button 
 {
-	position: absolute;
+	position: inline-block;
 	top: 150px;
 	left: 320px;
 	font-size: 60px;
